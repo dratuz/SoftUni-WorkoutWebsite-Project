@@ -1,0 +1,12 @@
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\WorkoutWebsite\WorkoutWebsite.Services\bin\Debug\netstandard2.0\WorkoutWebsite.Services.deps.json
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\WorkoutWebsite\WorkoutWebsite.Services\bin\Debug\netstandard2.0\WorkoutWebsite.Services.dll
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\WorkoutWebsite\WorkoutWebsite.Services\bin\Debug\netstandard2.0\WorkoutWebsite.Data.dll
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\WorkoutWebsite\WorkoutWebsite.Services\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\WorkoutWebsite\WorkoutWebsite.Services\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Stores.dll
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\WorkoutWebsite\WorkoutWebsite.Services\bin\Debug\netstandard2.0\WorkoutWebsite.Data.pdb
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\WorkoutWebsite\WorkoutWebsite.Services\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\WorkoutWebsite\WorkoutWebsite.Services\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Stores.xml
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\WorkoutWebsite\WorkoutWebsite.Services\obj\Debug\netstandard2.0\WorkoutWebsite.Services.csprojResolveAssemblyReference.cache
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\WorkoutWebsite\WorkoutWebsite.Services\obj\Debug\netstandard2.0\WorkoutWebsite.Services.csproj.CoreCompileInputs.cache
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\WorkoutWebsite\WorkoutWebsite.Services\obj\Debug\netstandard2.0\WorkoutWebsite.Services.AssemblyInfoInputs.cache
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\WorkoutWebsite\WorkoutWebsite.Services\obj\Debug\netstandard2.0\WorkoutWebsite.Services.AssemblyInfo.cs

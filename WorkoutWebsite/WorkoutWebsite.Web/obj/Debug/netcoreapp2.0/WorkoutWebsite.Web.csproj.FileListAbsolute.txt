@@ -1,0 +1,14 @@
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\WorkoutWebsite\WorkoutWebsite.Web\obj\Debug\netcoreapp2.0\WorkoutWebsite.Web.csprojResolveAssemblyReference.cache
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\WorkoutWebsite\WorkoutWebsite.Web\obj\Debug\netcoreapp2.0\WorkoutWebsite.Web.csproj.CoreCompileInputs.cache
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\WorkoutWebsite\WorkoutWebsite.Web\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\WorkoutWebsite\WorkoutWebsite.Web\obj\Debug\netcoreapp2.0\WorkoutWebsite.Web.AssemblyInfoInputs.cache
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\WorkoutWebsite\WorkoutWebsite.Web\obj\Debug\netcoreapp2.0\WorkoutWebsite.Web.AssemblyInfo.cs
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\WorkoutWebsite\WorkoutWebsite.Web\bin\Debug\netcoreapp2.0\WorkoutWebsite.Web.deps.json
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\WorkoutWebsite\WorkoutWebsite.Web\bin\Debug\netcoreapp2.0\WorkoutWebsite.Web.runtimeconfig.json
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\WorkoutWebsite\WorkoutWebsite.Web\bin\Debug\netcoreapp2.0\WorkoutWebsite.Web.runtimeconfig.dev.json
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\WorkoutWebsite\WorkoutWebsite.Web\bin\Debug\netcoreapp2.0\WorkoutWebsite.Web.dll
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\WorkoutWebsite\WorkoutWebsite.Web\bin\Debug\netcoreapp2.0\WorkoutWebsite.Web.pdb
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\WorkoutWebsite\WorkoutWebsite.Web\bin\Debug\netcoreapp2.0\WorkoutWebsite.Data.dll
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\WorkoutWebsite\WorkoutWebsite.Web\bin\Debug\netcoreapp2.0\WorkoutWebsite.Data.pdb
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\WorkoutWebsite\WorkoutWebsite.Web\obj\Debug\netcoreapp2.0\WorkoutWebsite.Web.dll
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\WorkoutWebsite\WorkoutWebsite.Web\obj\Debug\netcoreapp2.0\WorkoutWebsite.Web.pdb
