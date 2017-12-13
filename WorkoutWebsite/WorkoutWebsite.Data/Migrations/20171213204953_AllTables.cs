@@ -1,11 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
-using System;
-using System.Collections.Generic;
-
-namespace WorkoutWebsite.Data.Migrations
+﻿namespace WorkoutWebsite.Data.Migrations
 {
-    public partial class AddAllTablesWithDataAnnotations : Migration
+    using Microsoft.EntityFrameworkCore.Metadata;
+    using Microsoft.EntityFrameworkCore.Migrations;
+    using System;
+
+    public partial class AllTables : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -54,7 +53,7 @@ namespace WorkoutWebsite.Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Image = table.Column<byte[]>(nullable: true),
+                    ImageUrl = table.Column<string>(maxLength: 2000, nullable: false),
                     MuscleGroups = table.Column<int>(nullable: false),
                     Name = table.Column<string>(maxLength: 50, nullable: false)
                 },

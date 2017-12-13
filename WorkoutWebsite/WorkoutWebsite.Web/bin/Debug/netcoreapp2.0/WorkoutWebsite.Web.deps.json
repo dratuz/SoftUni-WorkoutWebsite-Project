@@ -27,7 +27,8 @@
           "Microsoft.EntityFrameworkCore.Tools": "2.0.1",
           "Microsoft.NETCore.App": "2.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.1",
-          "WorkoutWebsite.Data": "1.0.0"
+          "WorkoutWebsite.Data": "1.0.0",
+          "WorkoutWebsite.Services": "1.0.0"
         },
         "runtime": {
           "WorkoutWebsite.Web.dll": {}
@@ -4067,6 +4068,18 @@
           "WorkoutWebsite.Data.dll": {}
         }
       },
+      "WorkoutWebsite.Services/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.0.1",
+          "WorkoutWebsite.Data": "1.0.0"
+        },
+        "runtime": {
+          "WorkoutWebsite.Services.dll": {}
+        },
+        "compile": {
+          "WorkoutWebsite.Services.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.0.0": {
         "dependencies": {
           "Microsoft.NETCore.DotNetHostPolicy": "2.0.0",
@@ -6380,6 +6393,11 @@
       "hashPath": "windowsazure.storage.8.1.4.nupkg.sha512"
     },
     "WorkoutWebsite.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WorkoutWebsite.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

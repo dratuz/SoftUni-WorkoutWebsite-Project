@@ -9,6 +9,8 @@
     using WorkoutWebsite.Web.Services;
     using WorkoutWebsite.Data;
     using WorkoutWebsite.Data.Models;
+    using WorkoutWebsite.Services.Contracts;
+    using WorkoutWebsite.Services.Implementations;
 
     public class Startup
     {
@@ -31,6 +33,8 @@
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
+
+            services.AddTransient<IExersiseService, ExersiseService>();
 
             services.AddMvc();
         }

@@ -3694,11 +3694,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\SoftUni\\C# MVC Frameworks - ASP.NET Core\\Project\\WorkoutWebsite\\WorkoutWebsite.Services\\WorkoutWebsite.Services.csproj",
+      "projectUniqueName": "E:\\SoftUni\\C# MVC Frameworks - ASP.NET Core\\Project\\SoftUni-WorkoutWebsite-Project\\WorkoutWebsite\\WorkoutWebsite.Services\\WorkoutWebsite.Services.csproj",
       "projectName": "WorkoutWebsite.Services",
-      "projectPath": "E:\\SoftUni\\C# MVC Frameworks - ASP.NET Core\\Project\\WorkoutWebsite\\WorkoutWebsite.Services\\WorkoutWebsite.Services.csproj",
+      "projectPath": "E:\\SoftUni\\C# MVC Frameworks - ASP.NET Core\\Project\\SoftUni-WorkoutWebsite-Project\\WorkoutWebsite\\WorkoutWebsite.Services\\WorkoutWebsite.Services.csproj",
       "packagesPath": "C:\\Users\\Dratuz\\.nuget\\packages\\",
-      "outputPath": "E:\\SoftUni\\C# MVC Frameworks - ASP.NET Core\\Project\\WorkoutWebsite\\WorkoutWebsite.Services\\obj\\",
+      "outputPath": "E:\\SoftUni\\C# MVC Frameworks - ASP.NET Core\\Project\\SoftUni-WorkoutWebsite-Project\\WorkoutWebsite\\WorkoutWebsite.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3717,8 +3717,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "E:\\SoftUni\\C# MVC Frameworks - ASP.NET Core\\Project\\WorkoutWebsite\\WorkoutWebsite.Data\\WorkoutWebsite.Data.csproj": {
-              "projectPath": "E:\\SoftUni\\C# MVC Frameworks - ASP.NET Core\\Project\\WorkoutWebsite\\WorkoutWebsite.Data\\WorkoutWebsite.Data.csproj"
+            "E:\\SoftUni\\C# MVC Frameworks - ASP.NET Core\\Project\\SoftUni-WorkoutWebsite-Project\\WorkoutWebsite\\WorkoutWebsite.Data\\WorkoutWebsite.Data.csproj": {
+              "projectPath": "E:\\SoftUni\\C# MVC Frameworks - ASP.NET Core\\Project\\SoftUni-WorkoutWebsite-Project\\WorkoutWebsite\\WorkoutWebsite.Data\\WorkoutWebsite.Data.csproj"
             }
           }
         }

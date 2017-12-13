@@ -34,8 +34,6 @@
                 exersiseModel.MuscleGroups,
                 exersiseModel.ImageUrl);
 
-            //TODO: Route somewere..............................
-
             return this.RedirectToAction(nameof(HomeController.Index), "Home");
         }
     }
