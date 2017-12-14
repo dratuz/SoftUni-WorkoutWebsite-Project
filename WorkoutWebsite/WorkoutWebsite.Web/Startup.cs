@@ -11,6 +11,7 @@
     using WorkoutWebsite.Data.Models;
     using WorkoutWebsite.Services.Contracts;
     using WorkoutWebsite.Services.Implementations;
+    using AutoMapper;
 
     public class Startup
     {
@@ -30,6 +31,8 @@
             services.AddIdentity<User, IdentityRole>()
                 .AddEntityFrameworkStores<WorkoutWebsiteDbContext>()
                 .AddDefaultTokenProviders();
+
+            services.AddAutoMapper();
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();

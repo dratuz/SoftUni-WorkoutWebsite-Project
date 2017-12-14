@@ -23,8 +23,10 @@ E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\SoftUni-WorkoutWebsite-Proje
 E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\SoftUni-WorkoutWebsite-Project\WorkoutWebsite\WorkoutWebsite.Web\bin\Debug\netcoreapp2.0\WorkoutWebsite.Services.pdb
 E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\SoftUni-WorkoutWebsite-Project\WorkoutWebsite\WorkoutWebsite.Web\obj\Debug\netcoreapp2.0\WorkoutWebsite.Web.csprojResolveAssemblyReference.cache
 E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\SoftUni-WorkoutWebsite-Project\WorkoutWebsite\WorkoutWebsite.Web\obj\Debug\netcoreapp2.0\WorkoutWebsite.Web.csproj.CoreCompileInputs.cache
-E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\SoftUni-WorkoutWebsite-Project\WorkoutWebsite\WorkoutWebsite.Web\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
 E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\SoftUni-WorkoutWebsite-Project\WorkoutWebsite\WorkoutWebsite.Web\obj\Debug\netcoreapp2.0\WorkoutWebsite.Web.AssemblyInfoInputs.cache
 E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\SoftUni-WorkoutWebsite-Project\WorkoutWebsite\WorkoutWebsite.Web\obj\Debug\netcoreapp2.0\WorkoutWebsite.Web.AssemblyInfo.cs
 E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\SoftUni-WorkoutWebsite-Project\WorkoutWebsite\WorkoutWebsite.Web\obj\Debug\netcoreapp2.0\WorkoutWebsite.Web.dll
 E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\SoftUni-WorkoutWebsite-Project\WorkoutWebsite\WorkoutWebsite.Web\obj\Debug\netcoreapp2.0\WorkoutWebsite.Web.pdb
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\SoftUni-WorkoutWebsite-Project\WorkoutWebsite\WorkoutWebsite.Web\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\SoftUni-WorkoutWebsite-Project\WorkoutWebsite\WorkoutWebsite.Web\bin\Debug\netcoreapp2.0\WorkoutWebsite.Common.dll
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\SoftUni-WorkoutWebsite-Project\WorkoutWebsite\WorkoutWebsite.Web\bin\Debug\netcoreapp2.0\WorkoutWebsite.Common.pdb

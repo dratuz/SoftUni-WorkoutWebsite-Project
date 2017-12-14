@@ -21,3 +21,5 @@ E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\SoftUni-WorkoutWebsite-Proje
 E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\SoftUni-WorkoutWebsite-Project\WorkoutWebsite\WorkoutWebsite.Services\obj\Debug\netstandard2.0\WorkoutWebsite.Services.AssemblyInfo.cs
 E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\SoftUni-WorkoutWebsite-Project\WorkoutWebsite\WorkoutWebsite.Services\obj\Debug\netstandard2.0\WorkoutWebsite.Services.dll
 E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\SoftUni-WorkoutWebsite-Project\WorkoutWebsite\WorkoutWebsite.Services\obj\Debug\netstandard2.0\WorkoutWebsite.Services.pdb
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\SoftUni-WorkoutWebsite-Project\WorkoutWebsite\WorkoutWebsite.Services\bin\Debug\netstandard2.0\WorkoutWebsite.Common.dll
+E:\SoftUni\C# MVC Frameworks - ASP.NET Core\Project\SoftUni-WorkoutWebsite-Project\WorkoutWebsite\WorkoutWebsite.Services\bin\Debug\netstandard2.0\WorkoutWebsite.Common.pdb

@@ -1,9 +1,11 @@
 ﻿namespace WorkoutWebsite.Web.Models.ExersiseViewModels
 {
     using System.ComponentModel.DataAnnotations;
+    using WorkoutWebsite.Common.Mapping;
+    using WorkoutWebsite.Data.Models;
     using WorkoutWebsite.Data.Models.Enums;
 
-    public class ExersiseViewModel
+    public class ExersiseViewModel : IMapFrom<Exersise>
     {
         [Required]
         [MinLength(3)]

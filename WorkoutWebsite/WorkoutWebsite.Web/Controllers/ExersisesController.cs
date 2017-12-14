@@ -2,6 +2,7 @@
 {
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
+    using System.Threading.Tasks;
     using WorkoutWebsite.Services.Contracts;
     using WorkoutWebsite.Web.Models.ExersiseViewModels;
 
@@ -35,6 +36,13 @@
                 exersiseModel.ImageUrl);
 
             return this.RedirectToAction(nameof(HomeController.Index), "Home");
+        }
+
+        public async Task<IActionResult> All()
+        {
+            var allExersises = await this.exersises.AllAsync();
+
+            return this.View(allExersises);
         }
     }
 }

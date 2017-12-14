@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkoutWebsite.Data", "Work
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkoutWebsite.Web", "WorkoutWebsite.Web\WorkoutWebsite.Web.csproj", "{9AB4BCD5-00FC-4111-B4BB-D31BC4EC4747}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkoutWebsite.Services", "WorkoutWebsite.Services\WorkoutWebsite.Services.csproj", "{DD1007C6-6712-40A2-A3DB-7A2ADA9846BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkoutWebsite.Services", "WorkoutWebsite.Services\WorkoutWebsite.Services.csproj", "{DD1007C6-6712-40A2-A3DB-7A2ADA9846BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkoutWebsite.Common", "WorkoutWebsite.Common\WorkoutWebsite.Common.csproj", "{FF46B086-ABE1-4E14-A840-7E48DDFA4561}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{DD1007C6-6712-40A2-A3DB-7A2ADA9846BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD1007C6-6712-40A2-A3DB-7A2ADA9846BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD1007C6-6712-40A2-A3DB-7A2ADA9846BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF46B086-ABE1-4E14-A840-7E48DDFA4561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF46B086-ABE1-4E14-A840-7E48DDFA4561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF46B086-ABE1-4E14-A840-7E48DDFA4561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF46B086-ABE1-4E14-A840-7E48DDFA4561}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
