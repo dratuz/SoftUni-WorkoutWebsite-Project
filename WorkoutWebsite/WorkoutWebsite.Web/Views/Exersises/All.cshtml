@@ -7,20 +7,19 @@
 <h2>All Exersises</h2>
 
 <table class="table table-bordered table-hover">
-    @*<thead>
-        <tr>
-            <th>Image</th>
-            <th>Camera</th>
-            <th>Price</th>
-            <th>Stock</th>
-        </tr>
-    </thead>*@
     <tbody>
         @foreach (var item in Model)
         {
             <tr>
                 <td><img src="@item.ImageUrl" width="300" alt="@item.Name -- Muscle group: @item.MuscleGroups" class="img-responsive" /></td>
                 <th>@item.Name -- Muscle group: @item.MuscleGroups</th>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <td>
+                        <a class="btn btn-sm btn-warning" href="/exersises/edit/@item.Id">Edit</a>
+                        <a class="btn btn-sm btn-danger" href="/exersises/delete/@item.Id">Delete</a>
+                    </td>
+                }
                 @*<td><a class="btn btn-sm btn-default" href="/cameras/fullDetail/@item.Id">Details</a></td>*@
             </tr>
         }

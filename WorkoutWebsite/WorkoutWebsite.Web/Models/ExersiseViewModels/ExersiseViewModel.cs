@@ -20,5 +20,7 @@
         [MinLength(10)]
         [MaxLength(2000)]
         public string ImageUrl { get; set; }
+
+        public bool IsEdit { get; set; }
     }
 }

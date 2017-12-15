@@ -8,6 +8,12 @@
     public interface IExersiseService
     {
         void Create(string name, MuscleGroupType muscleGroup, string imageUrl);
+        
+        void Edit(int Id, string name, MuscleGroupType muscleGroup, string imageUrl);
+
+        void Delete(int Id);
+
+        ExersiseInfoModel ById(int Id);
 
         Task<IEnumerable<ExersiseInfoModel>> AllAsync();
     }
