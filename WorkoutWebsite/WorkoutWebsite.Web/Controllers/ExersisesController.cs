@@ -81,7 +81,7 @@
         {
             return this.View(id);
         }
-
+        
         [Authorize]
         public IActionResult Destory(int id)
         {
