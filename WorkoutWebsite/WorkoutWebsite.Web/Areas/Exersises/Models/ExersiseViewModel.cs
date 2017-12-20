@@ -1,4 +1,4 @@
-﻿namespace WorkoutWebsite.Web.Models.ExersiseViewModels
+﻿namespace WorkoutWebsite.Web.Areas.Models.ExersiseViewModels
 {
     using System.ComponentModel.DataAnnotations;
     using WorkoutWebsite.Common.Mapping;

@@ -22,6 +22,10 @@
 
         public void Create(string name, MuscleGroupType muscleGroup, string imageUrl)
         {
+            if (db.Exersises.Select(e => e.Name).Contains(name))
+            {
+                return;
+            }
             Exersise exersise = new Exersise
             {
                 Name = name,

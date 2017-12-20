@@ -25,4 +25,12 @@
     <ProjectReference Include="..\WorkoutWebsite.Services\WorkoutWebsite.Services.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\Workouts\Controllers\" />
+    <Folder Include="Areas\Workouts\Data\" />
+    <Folder Include="Areas\Workouts\Models\" />
+    <Folder Include="Areas\Workouts\Views\" />
+    <Folder Include="Models\ExersiseViewModels\" />
+  </ItemGroup>
+
 </Project>

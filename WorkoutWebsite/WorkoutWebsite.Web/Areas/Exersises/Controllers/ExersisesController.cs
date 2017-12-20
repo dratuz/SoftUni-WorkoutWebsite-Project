@@ -1,12 +1,13 @@
-﻿namespace WorkoutWebsite.Web.Controllers
+﻿namespace WorkoutWebsite.Web.Areas.Controllers
 {
-    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
     using System.Threading.Tasks;
     using WorkoutWebsite.Services.Contracts;
-    using WorkoutWebsite.Web.Models.ExersiseViewModels;
+    using WorkoutWebsite.Web.Areas.Exersises.Controllers;
+    using WorkoutWebsite.Web.Areas.Models.ExersiseViewModels;
+    using WorkoutWebsite.Web.Controllers;
 
-    public class ExersisesController : Controller
+    public class ExersisesController : ExersisesBaseController
     {
         private readonly IExersiseService exersises;
 
@@ -14,15 +15,13 @@
         {
             this.exersises = exersises;
         }
-
-        [Authorize]
+        
         public IActionResult Add()
         {
             return this.View();
         }
 
         [HttpPost]
-        [Authorize]
         public IActionResult Add(ExersiseViewModel exersiseModel)
         {
             if (!ModelState.IsValid)
@@ -35,10 +34,9 @@
                 exersiseModel.MuscleGroups,
                 exersiseModel.ImageUrl);
 
-            return this.RedirectToAction(nameof(HomeController.Index), "Home");
+            return this.RedirectToAction(nameof(this.All));
         }
-
-        [Authorize]
+        
         public IActionResult Edit(int id)
         {
             var exersise = this.exersises.ById(id);
@@ -58,7 +56,6 @@
         }
 
         [HttpPost]
-        [Authorize]
         public IActionResult Edit(int id, ExersiseViewModel exersiseModel)
         {
             if (!ModelState.IsValid)
@@ -75,15 +72,13 @@
 
             return this.RedirectToAction(nameof(this.All));
         }
-
-        [Authorize]
+        
         public IActionResult Delete(int id)
         {
             return this.View(id);
         }
         
-        [Authorize]
-        public IActionResult Destory(int id)
+        public IActionResult Destroy(int id)
         {
             this.exersises.Delete(id);
 

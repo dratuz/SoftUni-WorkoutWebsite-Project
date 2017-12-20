@@ -1,0 +1,11 @@
+﻿@model int
+@{
+    ViewData["Title"] = "Delete Exersise";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h2>Are you sure you want to delete this exercise?</h2>
+
+<a href="/exersises/exersises/all" class="btn btn-default">Back</a>
+<a href="/exersises/exersises/destroy/@Model" class="btn btn-danger">Confirm Delete</a>
