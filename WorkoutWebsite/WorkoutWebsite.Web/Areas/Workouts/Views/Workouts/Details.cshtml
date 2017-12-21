@@ -1,0 +1,39 @@
+﻿@model WorkoutInfoModel
+@{
+    ViewData["Title"] = "Details";
+}
+<body style="background-color:lightgray">
+    <br />
+    <div class="text-center">
+        <img src="@Model.ImageUrl" />
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Type</td>
+                    <td>Focus</td>
+                    <td>Difficulty</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@Model.Name</td>
+                    <td>@Model.Type</td>
+                    <td>@Model.Focus</td>
+                    <td>@Model.Difficulty</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table text-left">
+            <tbody>
+                <tr>
+                    <td>
+                        <a style="font-size:x-large" class="btn btn-sm btn-warning" href="/workouts/workouts/edit/@Model.Id">Edit</a>
+                        <a style="font-size:x-large" class="btn btn-sm btn-danger" href="/workouts/workouts/delete/@Model.Id">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+

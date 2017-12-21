@@ -12,6 +12,7 @@
     using WorkoutWebsite.Services.Contracts;
     using WorkoutWebsite.Services.Implementations;
     using AutoMapper;
+    using Microsoft.AspNetCore.Mvc;
 
     public class Startup
     {
@@ -31,15 +32,20 @@
             services.AddIdentity<User, IdentityRole>()
                 .AddEntityFrameworkStores<WorkoutWebsiteDbContext>()
                 .AddDefaultTokenProviders();
-
-            services.AddAutoMapper();
-
+            
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
 
             services.AddTransient<IExersiseService, ExersiseService>();
 
-            services.AddMvc();
+            services.AddTransient<IWorkoutService, WorkoutService>();
+
+            services.AddAutoMapper();
+
+            services.AddMvc(options => 
+            {
+                options.Filters.Add<AutoValidateAntiforgeryTokenAttribute>();
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

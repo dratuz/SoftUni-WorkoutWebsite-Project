@@ -1,10 +1,9 @@
-﻿namespace WorkoutWebsite.Data.Models
+﻿namespace WorkoutWebsite.Web.Areas.Workouts.Models
 {
-    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using WorkoutWebsite.Data.Models.Enums;
 
-    public class Workout
+    public class WorkoutViewModel
     {
         public int Id { get; set; }
 
@@ -27,9 +26,5 @@
         [MinLength(10)]
         [MaxLength(2000)]
         public string ImageUrl { get; set; }
-
-        public List<ExersiseWorkout> Exersises { get; set; } = new List<ExersiseWorkout>();
-
-        public List<WorkoutProgram> Programs { get; set; } = new List<WorkoutProgram>();
     }
 }

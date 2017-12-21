@@ -1,0 +1,32 @@
+﻿@model IEnumerable<WorkoutInfoModel>
+
+@{
+    ViewData["Title"] = "All Workouts";
+}
+
+<h2>All Workouts</h2>
+
+<body>
+    <div class="row text-center">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4 col-sm-6">
+                <a href="/workouts/workouts/details/@item.Id">
+                    <img src="@item.ImageUrl" width="300" alt="@item.Name" class="img-responsive" />
+                    @*@if (User.Identity.IsAuthenticated)
+                    {
+                        <a class="btn btn-sm btn-warning" href="/workouts/workouts/edit/@item.Id">Edit</a>
+                        <a class="btn btn-sm btn-danger" href="/workouts/workouts/delete/@item.Id">Delete</a>
+                    }*@
+                </a>
+                <br />
+            </div>
+        }
+    </div>
+</body>
+
+@*<table class="table table-bordered table-hover">
+        <tbody>
+
+        </tbody>
+    </table>*@

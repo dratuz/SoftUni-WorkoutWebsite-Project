@@ -37,9 +37,9 @@
             this.db.SaveChanges();
         }
 
-        public void Edit(int Id, string name, MuscleGroupType muscleGroup, string imageUrl)
+        public void Edit(int id, string name, MuscleGroupType muscleGroup, string imageUrl)
         {
-            var exersise = this.db.Exersises.Find(Id);
+            var exersise = this.db.Exersises.Find(id);
 
             if (exersise == null)
             {
@@ -53,9 +53,9 @@
             this.db.SaveChanges();
         }
 
-        public void Delete(int Id)
+        public void Delete(int id)
         {
-            var exersise = this.db.Exersises.Find(Id);
+            var exersise = this.db.Exersises.Find(id);
 
             if (exersise == null)
             {
@@ -66,21 +66,21 @@
             this.db.SaveChanges();
         }
 
-        public ExersiseInfoModel ById(int Id)
+        public ExersiseInfoModel ById(int id)
         {
             var result = this.db.Exersises
-                .Where(a => a.Id == Id)
+                .Where(a => a.Id == id)
                 .ProjectTo<ExersiseInfoModel>()
                 .FirstOrDefault();
 
             return result;
         }
 
-        public async Task<IEnumerable<ExersiseInfoModel>> AllAsync()
+        public IEnumerable<ExersiseInfoModel> All()
         {
-            var exersises = await this.db.Exersises
+            var exersises = this.db.Exersises
                 .ProjectTo<ExersiseInfoModel>()
-                .ToListAsync();
+                .ToList();
 
             return exersises;
         }

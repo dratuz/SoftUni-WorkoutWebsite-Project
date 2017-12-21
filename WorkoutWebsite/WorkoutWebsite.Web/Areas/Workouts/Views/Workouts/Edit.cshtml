@@ -1,0 +1,47 @@
+﻿@model WorkoutViewModel
+@{
+    ViewData["Title"] = "Edit Workout";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <h4>Edit @Model.Name workout.</h4>
+            <hr />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" />
+                @*<span asp-validation-for="Name" class="text-danger"></span>*@
+            </div>
+            <div class="form-group">
+                <label asp-for="Type"></label>
+                <select asp-for="Type" asp-items="Html.GetEnumSelectList<WorkoutType>()" class="form-control"></select>
+                <span asp-validation-for="Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Focus"></label>
+                <select asp-for="Focus" asp-items="Html.GetEnumSelectList<FocusType>()" class="form-control"></select>
+                <span asp-validation-for="Focus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Difficulty"></label>
+                <select asp-for="Difficulty" asp-items="Html.GetEnumSelectList<DifficultyType>()" class="form-control"></select>
+                <span asp-validation-for="Difficulty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageUrl"></label>
+                <input asp-for="ImageUrl" class="form-control" />
+                <span asp-validation-for="ImageUrl" class="text-danger"></span>
+            </div>
+            <a href="/workouts/workouts/all" class="btn btn-default">Back</a>
+            <button type="submit" class="btn btn-warning">Edit Workout</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

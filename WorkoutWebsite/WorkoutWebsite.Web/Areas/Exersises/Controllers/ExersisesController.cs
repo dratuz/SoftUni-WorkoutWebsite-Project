@@ -1,11 +1,9 @@
 ﻿namespace WorkoutWebsite.Web.Areas.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
-    using System.Threading.Tasks;
     using WorkoutWebsite.Services.Contracts;
     using WorkoutWebsite.Web.Areas.Exersises.Controllers;
     using WorkoutWebsite.Web.Areas.Models.ExersiseViewModels;
-    using WorkoutWebsite.Web.Controllers;
 
     public class ExersisesController : ExersisesBaseController
     {
@@ -85,9 +83,9 @@
             return this.RedirectToAction(nameof(this.All));
         }
         
-        public async Task<IActionResult> All()
+        public IActionResult All()
         {
-            var allExersises = await this.exersises.AllAsync();
+            var allExersises = this.exersises.All();
 
             return this.View(allExersises);
         }

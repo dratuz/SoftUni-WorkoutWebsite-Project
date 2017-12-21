@@ -9,12 +9,12 @@
     {
         void Create(string name, MuscleGroupType muscleGroup, string imageUrl);
         
-        void Edit(int Id, string name, MuscleGroupType muscleGroup, string imageUrl);
+        void Edit(int id, string name, MuscleGroupType muscleGroup, string imageUrl);
 
-        void Delete(int Id);
+        void Delete(int id);
 
-        ExersiseInfoModel ById(int Id);
+        ExersiseInfoModel ById(int id);
 
-        Task<IEnumerable<ExersiseInfoModel>> AllAsync();
+        IEnumerable<ExersiseInfoModel> All();
     }
 }
