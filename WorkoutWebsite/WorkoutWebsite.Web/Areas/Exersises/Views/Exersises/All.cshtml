@@ -11,8 +11,11 @@
         @foreach (var item in Model)
         {
             <tr>
-                <td><img src="@item.ImageUrl" width="300" alt="@item.Name -- Muscle group: @item.MuscleGroups" class="img-responsive" /></td>
-                <th style="color:white">@item.Name -- Muscle group: @item.MuscleGroups</th>
+                <td><a href="/exersises/exersises/details/@item.Id">
+                       <img src="@item.ImageUrl" width="300" alt="@item.Name -- Muscle group: @item.MuscleGroups" class="img-responsive" />
+                    </a>
+                </td>
+                <td style="color:white">@item.Name -- Muscle group: @item.MuscleGroups</td>
                 @if (User.IsInRole(RoleConstants.AdminRole))
                 {
                     <td>
@@ -20,7 +23,6 @@
                         <a class="btn btn-sm btn-danger" href="/exersises/exersises/delete/@item.Id">Delete</a>
                     </td>
                 }
-                @*<td><a class="btn btn-sm btn-default" href="/cameras/fullDetail/@item.Id">Details</a></td>*@
             </tr>
         }
     </tbody>
