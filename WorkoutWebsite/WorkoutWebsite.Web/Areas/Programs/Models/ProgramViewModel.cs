@@ -1,9 +1,9 @@
-﻿namespace WorkoutWebsite.Data.Models
+﻿namespace WorkoutWebsite.Web.Areas.Programs.Models
 {
-    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using WorkoutWebsite.Common.Mapping;
 
-    public class Program
+    public class ProgramViewModel : IMapFrom<Program>
     {
         public int Id { get; set; }
 
@@ -17,7 +17,5 @@
         [MinLength(10)]
         [MaxLength(2000)]
         public string ImageUrl { get; set; }
-
-        public List<WorkoutProgram> Workouts { get; set; } = new List<WorkoutProgram>();
     }
 }

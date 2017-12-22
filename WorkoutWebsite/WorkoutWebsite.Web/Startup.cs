@@ -32,13 +32,16 @@
             services.AddIdentity<User, IdentityRole>()
                 .AddEntityFrameworkStores<WorkoutWebsiteDbContext>()
                 .AddDefaultTokenProviders();
-            
+
             // Add application services.
+
             services.AddTransient<IEmailSender, EmailSender>();
 
             services.AddTransient<IExersiseService, ExersiseService>();
 
             services.AddTransient<IWorkoutService, WorkoutService>();
+
+            services.AddTransient<IProgramService, ProgramService>();
 
             services.AddAutoMapper();
 

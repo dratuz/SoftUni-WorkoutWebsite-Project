@@ -12,9 +12,10 @@ using WorkoutWebsite.Data.Models.Enums;
 namespace WorkoutWebsite.Data.Migrations
 {
     [DbContext(typeof(WorkoutWebsiteDbContext))]
-    partial class WorkoutWebsiteDbContextModelSnapshot : ModelSnapshot
+    [Migration("20171221233655_ProgramsImages")]
+    partial class ProgramsImages
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

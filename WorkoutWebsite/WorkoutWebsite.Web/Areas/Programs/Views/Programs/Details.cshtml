@@ -1,0 +1,27 @@
+﻿@model ProgramInfoModel
+@{
+    ViewData["Title"] = "Details";
+}
+<body style="background-color:lightgray">
+    <br />
+    <div class="text-center">
+        @{int dayCount = 1; }
+        @foreach (var item in Model.Workouts)
+        {
+            <a style="font-size:x-large" class="btn btn-sm btn-default" href="/workouts/workouts/details/@item.WorkoutId">Day @dayCount</a>
+            dayCount++;
+        }
+        
+        <table class="table text-left">
+            <tbody>
+                <tr>
+                    <td>
+                        <a style="font-size:x-large" class="btn btn-sm btn-warning" href="/workouts/workouts/edit/@Model.Id">Edit</a>
+                        <a style="font-size:x-large" class="btn btn-sm btn-danger" href="/workouts/workouts/delete/@Model.Id">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
