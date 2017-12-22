@@ -2,6 +2,7 @@
 {
     using AutoMapper.QueryableExtensions;
     using Microsoft.EntityFrameworkCore;
+    using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
@@ -33,7 +34,8 @@
                 Type = type,
                 Focus = focus,
                 Difficulty = difficulty,
-                ImageUrl = imageUrl
+                ImageUrl = imageUrl,
+                DateTime = DateTime.Now
             };
 
             this.db.Workouts.Add(workout);
@@ -43,7 +45,7 @@
         public void Edit(
             int id,
             string name,
-            WorkoutType type, 
+            WorkoutType type,
             FocusType focus,
             DifficultyType difficulty,
             string imageUrl)

@@ -3,26 +3,26 @@
     ViewData["Title"] = "Edit Exersise";
 }
 
-<h2>@ViewData["Title"]</h2>
+<h2 style="color:black">@ViewData["Title"]</h2>
 
 <div class="row">
     <div class="col-md-4">
         <form method="post">
-            <h4>Edit @Model.Name exersise.</h4>
+            <h4 style="color:black">Edit @Model.Name exersise.</h4>
             <hr />
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Name"></label>
+                <label style="color:black" asp-for="Name"></label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="MuscleGroups"></label>
+                <label style="color:black" asp-for="MuscleGroups"></label>
                 <select asp-for="MuscleGroups" asp-items="Html.GetEnumSelectList<MuscleGroupType>()" class="form-control"></select>
                 <span asp-validation-for="MuscleGroups" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ImageUrl"></label>
+                <label style="color:black" asp-for="ImageUrl"></label>
                 <input asp-for="ImageUrl" class="form-control" />
                 <span asp-validation-for="ImageUrl" class="text-danger"></span>
             </div>

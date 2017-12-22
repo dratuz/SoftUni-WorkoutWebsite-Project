@@ -1,5 +1,6 @@
 ﻿namespace WorkoutWebsite.Data.Models
 {
+    using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using WorkoutWebsite.Data.Models.Enums;
@@ -27,6 +28,13 @@
         [MinLength(10)]
         [MaxLength(2000)]
         public string ImageUrl { get; set; }
+
+        [Required]
+        public DateTime DateTime { get; set; }
+
+        public string UserId { get; set; }
+
+        public User User { get; set; }
 
         public List<ExersiseWorkout> Exersises { get; set; } = new List<ExersiseWorkout>();
 

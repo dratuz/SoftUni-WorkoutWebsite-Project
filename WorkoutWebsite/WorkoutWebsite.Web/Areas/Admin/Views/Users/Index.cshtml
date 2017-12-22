@@ -1,26 +1,38 @@
-﻿@model IEnumerable<AdminUserInfoModel>
+﻿@model AdminUserViewModel
 
 @{
     ViewData["Title"] = "User Administration";
 }
 
-<h2>@ViewData["Title"]</h2>
+<h2 style="color:black">@ViewData["Title"]</h2>
 
 <table class="table table-bordered table-hover">
     <thead>
         <tr>
-            <th>UserName</th>
-            <th>Email</th>
-            <th></th>
+            <th style="color:black">UserName</th>
+            <th style="color:black">Email</th>
+            <th style="color:black">Role</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
+        @foreach (var item in Model.Users)
         {
             <tr>
-                <th>@item.UserName</th>
-                <th>@item.Email</th>
-                <th></th>
+                <th style="color:black">@item.UserName</th>
+                <th style="color:black">@item.Email</th>
+                <th>
+                    <form asp-controller="Users" asp-action="AddToRole">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <input type="hidden" name="UserId" value="@item.Id" />
+                                <select name="Role" asp-items="Model.Roles" class="form-control"></select>
+                            </div>
+                            <div class="col-md-4">
+                                <input class="btn btn-sm btn-primary" type="submit" value="Add Role" />
+                            </div>
+                        </div>
+                    </form>
+                </th>
             </tr>
         }
     </tbody>

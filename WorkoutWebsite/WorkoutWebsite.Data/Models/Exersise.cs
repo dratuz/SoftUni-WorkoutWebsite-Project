@@ -22,6 +22,10 @@
         [MaxLength(2000)]
         public string ImageUrl { get; set; }
 
+        public string UserId { get; set; }
+
+        public User User { get; set; }
+
         public List<ExersiseWorkout> Workouts { get; set; } = new List<ExersiseWorkout>();
     }
 }

@@ -8,6 +8,6 @@
 
     public interface IAdminUserService: IMapFrom<User>
     {
-        IEnumerable<AdminUserInfoModel> All();
+        Task<IEnumerable<AdminUserInfoModel>> AllAsync();
     }
 }

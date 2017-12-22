@@ -2,9 +2,8 @@
 {
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
-    using WorkoutWebsite.Web.Infrastructure;
 
-    [Area(GlobalConstants.WorkoutArea)]
+    [Area(AreaConstants.WorkoutArea)]
     [Authorize]
     public class WorkoutsBaseController : Controller
     {

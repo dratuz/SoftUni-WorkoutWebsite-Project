@@ -40,7 +40,10 @@
                             <ul class="dropdown-menu">
 
                                 <li><a asp-area="Exersises" asp-controller="Exersises" asp-action="All">All Exersises</a></li>
-                                <li><a asp-area="Exersises" asp-controller="Exersises" asp-action="Add">Add Exersise</a></li>
+                                @if (User.IsInRole(RoleConstants.AdminRole))
+                                {
+                                    <li><a asp-area="Exersises" asp-controller="Exersises" asp-action="Add">Add Exersise</a></li>
+                                }
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -50,7 +53,11 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a asp-area="Workouts" asp-controller="Workouts" asp-action="All">All Workouts</a></li>
+                                @if (User.IsInRole(RoleConstants.AdminRole))
+                                {
                                 <li><a asp-area="Workouts" asp-controller="Workouts" asp-action="Add">Add Workout</a></li>
+                                }
+                                
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -60,21 +67,12 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a asp-area="Programs" asp-controller="Programs" asp-action="All">All Programs</a></li>
-                                <li><a asp-area="Programs" asp-controller="Programs" asp-action="Add">Add Program</a></li>
+                                @if (User.IsInRole(RoleConstants.AdminRole))
+                                {
+                                    <li><a asp-area="Programs" asp-controller="Programs" asp-action="Add">Add Program</a></li>
+                                }
                             </ul>
                         </li>
-                        @if (User.IsInRole(GlobalConstants.AdminRole))
-                        {
-                            <li class="dropdown-menu-right">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                    Admin
-                                    <span class="caret"></span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a asp-area="Admin" asp-controller="Users" asp-action="Index">All Users</a></li>
-                                </ul>
-                            </li>
-                        }
                     }
                 </ul>
                 @await Html.PartialAsync("_LoginPartial")
@@ -82,6 +80,12 @@
         </div>
     </nav>
     <div class="container body-content">
+        @if (TempData.ContainsKey("ErrorMessage"))
+        {
+            <div class="alert alert-warning">
+                @TempData["SuccessMessage"]
+            </div>
+        }
         @RenderBody()
         <hr />
         <footer>

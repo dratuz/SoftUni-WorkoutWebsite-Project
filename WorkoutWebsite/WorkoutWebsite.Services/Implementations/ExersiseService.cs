@@ -1,10 +1,8 @@
 ﻿namespace WorkoutWebsite.Services.Implementations
 {
     using AutoMapper.QueryableExtensions;
-    using Microsoft.EntityFrameworkCore;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Threading.Tasks;
     using WorkoutWebsite.Data;
     using WorkoutWebsite.Data.Models;
     using WorkoutWebsite.Data.Models.Enums;

@@ -1,8 +1,10 @@
 ﻿namespace WorkoutWebsite.Web.Areas.Programs.Controllers
 {
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
     using WorkoutWebsite.Services.Contracts;
     using WorkoutWebsite.Web.Areas.Programs.Models;
+    using WorkoutWebsite.Web.Infrastructure;
 
     public class ProgramsController : ProgramsBaseController
     {
@@ -13,12 +15,14 @@
             this.programs = programs;
         }
 
+        [Authorize(Roles = RoleConstants.AdminRole)]
         public IActionResult Add()
         {
             return this.View();
         }
 
         [HttpPost]
+        [Authorize(Roles = RoleConstants.AdminRole)]
         public IActionResult Add(ProgramViewModel programModel)
         {
             if (!ModelState.IsValid)

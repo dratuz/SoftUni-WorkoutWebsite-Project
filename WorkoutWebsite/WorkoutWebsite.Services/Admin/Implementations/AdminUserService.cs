@@ -18,11 +18,11 @@
             this.db = db;
         }
 
-        public IEnumerable<AdminUserInfoModel> All()
+        public async Task<IEnumerable<AdminUserInfoModel>> AllAsync()
         {
-            var result = this.db.Users
+            var result = await this.db.Users
                 .ProjectTo<AdminUserInfoModel>()
-                .ToList();
+                .ToListAsync();
 
             return result;
         }

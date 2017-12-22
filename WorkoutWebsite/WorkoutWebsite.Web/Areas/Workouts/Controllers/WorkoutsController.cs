@@ -1,18 +1,20 @@
 ﻿namespace WorkoutWebsite.Web.Areas.Workouts.Controllers
 {
+    using Microsoft.AspNetCore.Authorization;
+    using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
+    using WorkoutWebsite.Data.Models;
     using WorkoutWebsite.Services.Contracts;
     using WorkoutWebsite.Web.Areas.Workouts.Models;
+    using WorkoutWebsite.Web.Infrastructure;
 
     public class WorkoutsController : WorkoutsBaseController
     {
         private readonly IWorkoutService workouts;
-        private readonly IExersiseService exersises;
 
-        public WorkoutsController(IWorkoutService workouts, IExersiseService exersises)
+        public WorkoutsController(IWorkoutService workouts)
         {
             this.workouts = workouts;
-            this.exersises = exersises;
         }
         
         public IActionResult All()
@@ -22,12 +24,14 @@
             return this.View(allWorkouts);
         }
 
+        [Authorize(Roles = RoleConstants.AdminRole)]
         public IActionResult Add()
         {
             return this.View();
         }
 
         [HttpPost]
+        [Authorize(Roles = RoleConstants.AdminRole)]
         public IActionResult Add(WorkoutViewModel workoutModel)
         {
             if (!ModelState.IsValid)
@@ -45,6 +49,7 @@
             return RedirectToAction(nameof(this.All));
         }
 
+        [Authorize(Roles = RoleConstants.AdminRole)]
         public IActionResult Edit(int id)
         {
             var workout = this.workouts.GetWorkoutById(id);
@@ -65,6 +70,7 @@
         }
 
         [HttpPost]
+        [Authorize(Roles = RoleConstants.AdminRole)]
         public IActionResult Edit(int id, WorkoutViewModel workoutModel)
         {
             if (!ModelState.IsValid)
@@ -83,11 +89,13 @@
             return this.RedirectToAction(nameof(this.All));
         }
 
+        [Authorize(Roles = RoleConstants.AdminRole)]
         public IActionResult Delete(int id)
         {
             return this.View(id);
         }
 
+        [Authorize(Roles = RoleConstants.AdminRole)]
         public IActionResult Destroy(int id)
         {
             this.workouts.Delete(id);

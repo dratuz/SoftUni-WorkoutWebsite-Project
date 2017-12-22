@@ -23,13 +23,13 @@
 
                 Task.Run(async () =>
                 {
-                    Type type = typeof(GlobalConstants);
+                    Type type = typeof(RoleConstants);
                     var flags = BindingFlags.Static | BindingFlags.Public;
                     var allConstants = type.GetFields(flags);
 
                     foreach (var item in allConstants)
                     {
-                        var roleName = (string)typeof(GlobalConstants).GetField(item.Name).GetValue(null);
+                        var roleName = (string)typeof(RoleConstants).GetField(item.Name).GetValue(null);
 
                         var roleExists = await roleManager.RoleExistsAsync(roleName);
 
@@ -42,7 +42,7 @@
                         }
                     }
 
-                    var adminName = GlobalConstants.AdminRole;
+                    var adminName = RoleConstants.AdminRole;
 
                     var adminUser = await userManager.FindByNameAsync(adminName);
 

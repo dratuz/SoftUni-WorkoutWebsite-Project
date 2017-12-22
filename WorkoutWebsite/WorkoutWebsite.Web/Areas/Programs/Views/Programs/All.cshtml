@@ -4,7 +4,7 @@
     ViewData["Title"] = "All Programs";
 }
 
-<h2>All Programs</h2>
+<h2 style="color:black">All Programs</h2>
 
 <body>
     <div class="row text-center">
@@ -12,7 +12,7 @@
         {
             <div class="col-md-4 col-sm-6">
                 <a href="/programs/programs/details/@item.Id">
-                    <img src="@item.ImageUrl" width="400" alt="@item.Name" class="img-responsive" />
+                    <img style="color:black" src="@item.ImageUrl" width="400" alt="@item.Name" class="img-responsive" />
                     @*@if (User.Identity.IsAuthenticated)
                       {
                           <a class="btn btn-sm btn-warning" href="/programs/programs/edit/@item.Id">Edit</a>

@@ -1,5 +1,6 @@
 ﻿namespace WorkoutWebsite.Services.Models
 {
+    using System;
     using System.Collections.Generic;
     using WorkoutWebsite.Common.Mapping;
     using WorkoutWebsite.Data.Models;
@@ -18,5 +19,7 @@
         public DifficultyType Difficulty { get; set; }
 
         public string ImageUrl { get; set; }
+
+        public DateTime DateTime { get; set; }
     }
 }

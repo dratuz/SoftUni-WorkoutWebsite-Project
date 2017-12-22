@@ -4,8 +4,8 @@
     using Microsoft.AspNetCore.Mvc;
     using WorkoutWebsite.Web.Infrastructure;
 
-    [Area(GlobalConstants.AdminArea)]
-    [Authorize(Roles = GlobalConstants.AdminRole)]
+    [Area(AreaConstants.AdminArea)]
+    [Authorize(Roles = RoleConstants.AdminRole)]
     public class AdminBaseController : Controller
     {
     }

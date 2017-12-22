@@ -8,6 +8,18 @@
 {
     <form asp-area="" asp-controller="Account" asp-action="Logout" method="post" id="logoutForm" class="navbar-right">
         <ul class="nav navbar-nav navbar-right">
+            @if (User.IsInRole(RoleConstants.AdminRole))
+            {
+                <li class="dropdown-menu-right">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Admin
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a asp-area="Admin" asp-controller="Users" asp-action="Index">All Users</a></li>
+                    </ul>
+                </li>
+            }
             <li>
                 <a asp-area="" asp-controller="Manage" asp-action="Index" title="Manage">@UserManager.GetUserName(User)</a>
             </li>

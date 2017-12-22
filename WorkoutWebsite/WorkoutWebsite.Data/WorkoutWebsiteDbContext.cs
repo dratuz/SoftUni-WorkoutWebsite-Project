@@ -55,6 +55,12 @@ namespace WorkoutWebsite.Data
                 .WithMany(w => w.Exersises)
                 .HasForeignKey(w => w.WorkoutId);
 
+            builder
+                .Entity<Workout>()
+                .HasOne(w => w.User)
+                .WithMany(w => w.Workouts)
+                .HasForeignKey(w => w.UserId);
+
             base.OnModelCreating(builder);
             // Customize the ASP.NET Identity model and override the defaults if needed.
             // For example, you can rename the ASP.NET Identity table names and more.
