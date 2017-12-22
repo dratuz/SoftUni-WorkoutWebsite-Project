@@ -13,6 +13,9 @@
     using WorkoutWebsite.Services.Implementations;
     using AutoMapper;
     using Microsoft.AspNetCore.Mvc;
+    using WorkoutWebsite.Web.Infrastructure.Extensions;
+    using WorkoutWebsite.Services.Admin.Contracts;
+    using WorkoutWebsite.Services.Admin.Implementations;
 
     public class Startup
     {
@@ -43,6 +46,8 @@
 
             services.AddTransient<IProgramService, ProgramService>();
 
+            services.AddTransient<IAdminUserService, AdminUserService>();
+
             services.AddAutoMapper();
 
             services.AddMvc(options => 
@@ -54,6 +59,8 @@
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseDatabaseMigration();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
