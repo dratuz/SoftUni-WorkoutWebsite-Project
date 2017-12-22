@@ -3,36 +3,36 @@
     ViewData["Title"] = "Edit Workout";
 }
 
-<h2 style="color:black">@ViewData["Title"]</h2>
+<h2 style="color:white">@ViewData["Title"]</h2>
 
 <div class="row">
     <div class="col-md-4">
         <form method="post">
-            <h4 style="color:black">Edit @Model.Name workout.</h4>
+            <h4 style="color:white">Edit @Model.Name workout.</h4>
             <hr />
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label style="color:black" asp-for="Name"></label>
+                <label style="color:white" asp-for="Name"></label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label style="color:black" asp-for="Type"></label>
+                <label style="color:white" asp-for="Type"></label>
                 <select asp-for="Type" asp-items="Html.GetEnumSelectList<WorkoutType>()" class="form-control"></select>
                 <span asp-validation-for="Type" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label style="color:black" asp-for="Focus"></label>
+                <label style="color:white" asp-for="Focus"></label>
                 <select asp-for="Focus" asp-items="Html.GetEnumSelectList<FocusType>()" class="form-control"></select>
                 <span asp-validation-for="Focus" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label style="color:black" asp-for="Difficulty"></label>
+                <label style="color:white" asp-for="Difficulty"></label>
                 <select asp-for="Difficulty" asp-items="Html.GetEnumSelectList<DifficultyType>()" class="form-control"></select>
                 <span asp-validation-for="Difficulty" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label style="color:black" asp-for="ImageUrl"></label>
+                <label style="color:white" asp-for="ImageUrl"></label>
                 <input asp-for="ImageUrl" class="form-control" />
                 <span asp-validation-for="ImageUrl" class="text-danger"></span>
             </div>

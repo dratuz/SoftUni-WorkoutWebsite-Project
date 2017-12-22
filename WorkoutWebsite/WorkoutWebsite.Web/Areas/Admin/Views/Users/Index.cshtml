@@ -9,17 +9,17 @@
 <table class="table table-bordered table-hover">
     <thead>
         <tr>
-            <th style="color:black">UserName</th>
-            <th style="color:black">Email</th>
-            <th style="color:black">Role</th>
+            <th style="color:gray">UserName</th>
+            <th style="color:gray">Email</th>
+            <th style="color:gray">Role</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var item in Model.Users)
         {
             <tr>
-                <th style="color:black">@item.UserName</th>
-                <th style="color:black">@item.Email</th>
+                <th style="color:gray">@item.UserName</th>
+                <th style="color:gray">@item.Email</th>
                 <th>
                     <form asp-controller="Users" asp-action="AddToRole">
                         <div class="row">

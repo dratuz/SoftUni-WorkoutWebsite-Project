@@ -4,7 +4,7 @@
     ViewData["Title"] = "All Exersises";
 }
 
-<h2 style="color:black">All Exersises</h2>
+<h2 style="color:white">All Exersises</h2>
 
 <table class="table table-bordered table-hover">
     <tbody>
@@ -12,7 +12,7 @@
         {
             <tr>
                 <td><img src="@item.ImageUrl" width="300" alt="@item.Name -- Muscle group: @item.MuscleGroups" class="img-responsive" /></td>
-                <th style="color:black">@item.Name -- Muscle group: @item.MuscleGroups</th>
+                <th style="color:white">@item.Name -- Muscle group: @item.MuscleGroups</th>
                 @if (User.IsInRole(RoleConstants.AdminRole))
                 {
                     <td>
