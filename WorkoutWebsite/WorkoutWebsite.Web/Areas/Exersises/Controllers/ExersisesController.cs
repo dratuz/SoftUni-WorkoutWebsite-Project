@@ -103,5 +103,12 @@
 
             return this.View(allExersises);
         }
+
+        public IActionResult Details(int id)
+        {
+            var exersise = this.exersises.ById(id);
+
+            return this.View(exersise);
+        }
     }
 }

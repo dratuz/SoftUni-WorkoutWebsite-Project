@@ -1,0 +1,38 @@
+﻿@model ExersiseInfoModel
+@{
+    ViewData["Title"] = "Details";
+}
+<body>
+    <br />
+    <div class="text-center">
+        <img src="@Model.ImageUrl" />
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <td style="color:white">Name</td>
+                    <td style="color:white">Muscle Groups</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="color:white">@Model.Name</td>
+                    <td style="color:white">@Model.MuscleGroups</td>
+                </tr>
+            </tbody>
+        </table>
+        @if (User.IsInRole(RoleConstants.AdminRole))
+        {
+            <table class="table text-left">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a style="font-size:x-large" class="btn btn-sm btn-warning" href="/exersises/exersises/edit/@Model.Id">Edit</a>
+                            <a style="font-size:x-large" class="btn btn-sm btn-danger" href="/exersises/exersises/delete/@Model.Id">Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        }
+    </div>
+</body>
+
